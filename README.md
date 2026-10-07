@@ -16,7 +16,7 @@ Windows может показать «Система Windows защитила в
 по контрольной сумме:
 
 ```powershell
-Get-FileHash .\SWAP-VPN-1.0.0-amd64-setup.exe -Algorithm SHA256
+Get-FileHash .\SWAP-VPN-1.0.1-amd64-setup.exe -Algorithm SHA256
 ```
 
 В этом репозитории только готовые установщики, без исходного кода.
