@@ -19,6 +19,18 @@ Windows может показать «Система Windows защитила в
 Get-FileHash .\SWAP-VPN-1.0.1-amd64-setup.exe -Algorithm SHA256
 ```
 
+## Android
+
+SWAP VPN для Android 8.0 и новее — файл `.apk` в разделе [Releases](../../releases).
+Откройте скачанный файл; если Android спросит, разрешите установку из браузера
+(«Установка неизвестных приложений»). При первом подключении Android попросит
+разрешить VPN-подключение.
+
+У всех версий один сертификат подписи (SHA-256):
+`6C:C6:C0:B5:39:C8:3F:65:F5:94:80:04:71:6B:40:D9:0F:B5:CC:CA:47:8A:6D:CF:53:FD:81:5F:1E:0A:23:F4`.
+Проверить файл: `apksigner verify --print-certs SWAP-VPN-1.0.1-android.apk`
+или по контрольной сумме из `SHA256SUMS.txt`.
+
 В этом репозитории только готовые установщики, без исходного кода.
 
 Поддержка: [help.swap@proton.me](mailto:help.swap@proton.me)
